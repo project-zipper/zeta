@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070A12">
+
+    <!-- Floating top search pill -->
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="#1AFFFFFF"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search ZipperOS..."
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Center app cluster (NOT normal grid) -->
+    <GridView
+        android:id="@+id/appGrid"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="18dp"
+        android:horizontalSpacing="18dp"
+        android:background="#0DFFFFFF"
+        android:padding="20dp"
+        android:clipToPadding="false" />
+
+    <!-- Floating dock (glass bar) -->
+    <LinearLayout
+        android:id="@+id/dock"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#22FFFFFF"
+        android:padding="12dp">
+
+        <!-- Dock placeholders -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#55FFFFFF"
+            android:layout_margin="6dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#55FFFFFF"
+            android:layout_margin="6dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#55FFFFFF"
+            android:layout_margin="6dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
